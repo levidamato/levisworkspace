@@ -1,0 +1,262 @@
+{
+  "id": "america-250-presidents",
+  "series": "America 250 Quiz",
+  "title": "America 250 Quiz: Test yourself on presidents, power and pivotal moments",
+  "slug": "america-250-presidents-quiz",
+  "category": "Presidents",
+  "dek": "As America prepares to celebrate its 250th anniversary, test your knowledge of the commanders in chief who helped shape the nation.",
+  "questionCount": 10,
+  "tags": [
+    "America 250",
+    "History Quiz",
+    "Presidents",
+    "American History"
+  ],
+  "imageSuggestions": [
+    "White House exterior",
+    "Mount Rushmore",
+    "Presidential portraits"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Who was the first president of the United States?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "John Adams"
+        },
+        {
+          "id": "b",
+          "text": "George Washington"
+        },
+        {
+          "id": "c",
+          "text": "Thomas Jefferson"
+        },
+        {
+          "id": "d",
+          "text": "James Madison"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "George Washington became the first U.S. president in 1789 and remains the only president unanimously chosen by the Electoral College."
+    },
+    {
+      "id": "q2",
+      "prompt": "Who was the first president to live in the White House?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "George Washington"
+        },
+        {
+          "id": "b",
+          "text": "John Adams"
+        },
+        {
+          "id": "c",
+          "text": "Thomas Jefferson"
+        },
+        {
+          "id": "d",
+          "text": "James Monroe"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "John Adams moved into the unfinished Executive Mansion in 1800. George Washington selected the site but never lived there."
+    },
+    {
+      "id": "q3",
+      "prompt": "Which president approved the Louisiana Purchase in 1803?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Thomas Jefferson"
+        },
+        {
+          "id": "b",
+          "text": "James Madison"
+        },
+        {
+          "id": "c",
+          "text": "Andrew Jackson"
+        },
+        {
+          "id": "d",
+          "text": "James K. Polk"
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "Thomas Jefferson's administration purchased the Louisiana Territory from France, dramatically expanding the size of the United States."
+    },
+    {
+      "id": "q4",
+      "prompt": "Which president delivered the Gettysburg Address?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ulysses S. Grant"
+        },
+        {
+          "id": "b",
+          "text": "Abraham Lincoln"
+        },
+        {
+          "id": "c",
+          "text": "Andrew Johnson"
+        },
+        {
+          "id": "d",
+          "text": "Rutherford B. Hayes"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Abraham Lincoln delivered the Gettysburg Address in 1863, dedicating a cemetery at the Pennsylvania battlefield."
+    },
+    {
+      "id": "q5",
+      "prompt": "Which president served more than two terms in office?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Theodore Roosevelt"
+        },
+        {
+          "id": "b",
+          "text": "Woodrow Wilson"
+        },
+        {
+          "id": "c",
+          "text": "Franklin D. Roosevelt"
+        },
+        {
+          "id": "d",
+          "text": "Harry S. Truman"
+        }
+      ],
+      "correctChoiceId": "c",
+      "explanation": "Franklin D. Roosevelt was elected four times. The 22nd Amendment later limited presidents to two elected terms."
+    },
+    {
+      "id": "q6",
+      "prompt": "Which president was nicknamed \"Old Hickory\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Andrew Jackson"
+        },
+        {
+          "id": "b",
+          "text": "Zachary Taylor"
+        },
+        {
+          "id": "c",
+          "text": "William Henry Harrison"
+        },
+        {
+          "id": "d",
+          "text": "Ulysses S. Grant"
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "Andrew Jackson earned the nickname \"Old Hickory\" from soldiers who compared his toughness to hickory wood."
+    },
+    {
+      "id": "q7",
+      "prompt": "Which president had been a Hollywood actor before entering national politics?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Richard Nixon"
+        },
+        {
+          "id": "b",
+          "text": "Ronald Reagan"
+        },
+        {
+          "id": "c",
+          "text": "Jimmy Carter"
+        },
+        {
+          "id": "d",
+          "text": "Gerald Ford"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Ronald Reagan appeared in films and television before serving as California governor and later as the 40th president."
+    },
+    {
+      "id": "q8",
+      "prompt": "Which president signed the Emancipation Proclamation?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Abraham Lincoln"
+        },
+        {
+          "id": "b",
+          "text": "Andrew Johnson"
+        },
+        {
+          "id": "c",
+          "text": "James Buchanan"
+        },
+        {
+          "id": "d",
+          "text": "Ulysses S. Grant"
+        }
+      ],
+      "correctChoiceId": "a",
+      "explanation": "Abraham Lincoln issued the Emancipation Proclamation during the Civil War; it took effect on Jan. 1, 1863."
+    },
+    {
+      "id": "q9",
+      "prompt": "Who was the youngest person ever elected president of the United States?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Theodore Roosevelt"
+        },
+        {
+          "id": "b",
+          "text": "John F. Kennedy"
+        },
+        {
+          "id": "c",
+          "text": "Bill Clinton"
+        },
+        {
+          "id": "d",
+          "text": "Barack Obama"
+        }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "John F. Kennedy was 43 when elected in 1960. Theodore Roosevelt became president at 42 after William McKinley's assassination, but he was not first elected at that age."
+    },
+    {
+      "id": "q10",
+      "prompt": "Which president signed the act creating the National Park Service in 1916?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Theodore Roosevelt"
+        },
+        {
+          "id": "b",
+          "text": "William Howard Taft"
+        },
+        {
+          "id": "c",
+          "text": "Woodrow Wilson"
+        },
+        {
+          "id": "d",
+          "text": "Franklin D. Roosevelt"
+        }
+      ],
+      "correctChoiceId": "c",
+      "explanation": "Woodrow Wilson signed the Organic Act in 1916, establishing the National Park Service within the Department of the Interior."
+    }
+  ]
+}
