@@ -10,6 +10,8 @@ The package includes:
 
 - `data/america-250-calendar.csv` - 25 weekly quiz themes for a 250-question
   series.
+- `data/america-250-question-tracker.csv` - a spreadsheet-ready tracker with
+  250 question slots, answer columns, fact-check notes and publish status.
 - `data/quizzes/presidents.json` - structured data for the first 10-question
   pilot quiz.
 - `content/presidents-quiz.md` - editor-friendly copy, questions, answers and
