@@ -1,22 +1,23 @@
 # levisworkspace
 
-## America 250 history quiz pilot
+## Code Runner: Debug Quest
 
-This repository contains a pilot package for a weekly **America 250 Quiz**
-series that could run as FoxNews.com celebrates the United States' 250th
-anniversary.
+This repository now includes a small browser-based coding game. In **Code
+Runner: Debug Quest**, players program Byte, a tiny release robot, by queuing
+commands such as `move()`, `turnLeft()` and `fixBug()`. The goal is to patch
+every bug on the grid and finish on the deploy portal.
 
-The package includes:
+The game includes:
 
-- `data/america-250-calendar.csv` - 25 weekly quiz themes for a 250-question
-  series.
-- `data/quizzes/presidents.json` - structured data for the first 10-question
-  pilot quiz.
-- `content/presidents-quiz.md` - editor-friendly copy, questions, answers and
-  fun facts.
-- `demo/` - a small static website demo that renders the quiz from JSON.
+- Three hand-authored levels with blockers, bugs and deploy targets.
+- A command queue that feels like writing a tiny program.
+- Animated program execution with crash, warning and success states.
+- Responsive styling for desktop and mobile browsers.
 
-## Run the website demo locally
+The original America 250 quiz content remains in `content/` and `data/` as
+reference material, but the playable demo in `demo/` is now the coding game.
+
+## Run the game locally
 
 From the repository root:
 
@@ -29,23 +30,3 @@ Then open:
 ```text
 http://localhost:8000/demo/
 ```
-
-The demo loads `data/quizzes/presidents.json` and renders a 10-question,
-multiple-choice quiz with scoring and answer explanations.
-
-## Website/CMS integration path
-
-The quiz content is intentionally stored as JSON so it can be:
-
-1. Copied manually into an internal CMS quiz tool.
-2. Converted into a spreadsheet for editorial review.
-3. Ingested by a website/API layer and rendered by a quiz frontend.
-
-For a production FoxNews.com integration, the site would typically:
-
-1. Store each quiz as CMS content or JSON returned by an internal endpoint.
-2. Render the question, answer choices and progress state on the article page.
-3. Score responses client-side or server-side.
-4. Show the answer explanation after each question or at the end.
-5. Tag the series consistently, for example `America 250`, `History Quiz` and
-   the weekly topic, such as `Presidents`.
