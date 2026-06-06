@@ -66,7 +66,7 @@ const levels = [
       { x: 2, y: 3 },
       { x: 4, y: 2 },
     ],
-    commandLimit: 18,
+    commandLimit: 22,
     hint: "Think in chunks: drive east to the first bug, turn around the wall, then patch the second.",
   },
   {
@@ -90,7 +90,7 @@ const levels = [
       { x: 5, y: 3 },
       { x: 5, y: 4 },
     ],
-    commandLimit: 26,
+    commandLimit: 40,
     hint: "Every turn matters. Patch the left-side bug first, then cross the middle before heading to the portal.",
   },
 ];
