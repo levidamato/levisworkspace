@@ -12,6 +12,8 @@ The package includes:
   series.
 - `data/america-250-question-tracker.csv` - a spreadsheet-ready tracker with
   250 drafted questions, answer columns, fact-check notes and publish status.
+- `data/america-250-history-quizzes.xlsx` - an Excel workbook with the
+  question tracker and calendar on separate sheets.
 - `data/quizzes/presidents.json` - structured data for the first 10-question
   pilot quiz.
 - `content/presidents-quiz.md` - editor-friendly copy, questions, answers and
