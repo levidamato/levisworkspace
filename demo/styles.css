@@ -143,6 +143,61 @@ button {
   border-left-color: var(--red);
 }
 
+.agent-section {
+  border-top: 1px solid var(--border);
+  margin-top: 26px;
+  padding-top: 24px;
+}
+
+.agent-section h2 {
+  color: var(--blue);
+  font-size: 1.35rem;
+  margin: 0 0 14px;
+}
+
+.agent-section h3 {
+  margin: 0 0 8px;
+}
+
+.agent-section p,
+.agent-section li {
+  line-height: 1.5;
+}
+
+.agent-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.agent-card,
+.briefing-item {
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.agent-card ul {
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.agent-card-meta {
+  color: var(--gray);
+  font-size: 0.92rem;
+  margin: 0 0 10px;
+}
+
+.briefing-list {
+  display: grid;
+  gap: 12px;
+}
+
+.briefing-item .eyebrow {
+  margin-bottom: 8px;
+}
+
 .actions {
   display: flex;
   gap: 12px;

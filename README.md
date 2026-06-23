@@ -16,6 +16,22 @@ The package includes:
   fun facts.
 - `demo/` - a small static website demo that renders the quiz from JSON.
 
+## Global & U.S. news briefing agent concept
+
+The repository also includes a starter kit for a personal **Global & U.S. News
+Briefing Agent** that helps a reader stay informed on major world and United
+States news.
+
+The package includes:
+
+- `data/news-agent/global-us-briefing-agent.json` - structured agent
+  configuration, including cadence, coverage priorities, source strategy,
+  guardrails and implementation backlog.
+- `content/news-briefing-agent.md` - editor-friendly concept brief for the
+  agent's behavior, trust rules, personalization questions and output format.
+- `demo/news-agent.html` - a static browser demo that renders the agent concept
+  from JSON.
+
 ## Run the website demo locally
 
 From the repository root:
@@ -32,6 +48,17 @@ http://localhost:8000/demo/
 
 The demo loads `data/quizzes/presidents.json` and renders a 10-question,
 multiple-choice quiz with scoring and answer explanations.
+
+To preview the news briefing agent concept, open:
+
+```text
+http://localhost:8000/demo/news-agent.html
+```
+
+The news agent demo is intentionally static. A production version would connect
+the JSON configuration to RSS feeds and/or licensed news APIs, a scheduler,
+source citations, story clustering, user preferences and delivery channels such
+as email, SMS, Slack, browser notifications or an app.
 
 ## Website/CMS integration path
 
