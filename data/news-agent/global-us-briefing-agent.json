@@ -1,0 +1,185 @@
+{
+  "id": "global-us-news-briefing-agent",
+  "name": "Global & U.S. News Briefing Agent",
+  "tagline": "A steady, source-aware news companion for understanding what changed, why it matters, and what to watch next.",
+  "mission": "Help the reader stay informed on major world and United States news without doomscrolling, sensational framing, or single-source conclusions.",
+  "audience": "A busy reader who wants a balanced daily briefing, timely alerts for major developments, and enough context to ask better follow-up questions.",
+  "cadence": [
+    {
+      "name": "Morning briefing",
+      "time": "7:00 AM local time",
+      "goal": "Start the day with the top global and U.S. developments, overnight updates, and what is expected next."
+    },
+    {
+      "name": "Midday check-in",
+      "time": "12:30 PM local time",
+      "goal": "Surface meaningful changes since the morning briefing without repeating unchanged stories."
+    },
+    {
+      "name": "Evening wrap",
+      "time": "6:00 PM local time",
+      "goal": "Summarize the day's confirmed developments, unresolved questions, and tomorrow's watch list."
+    },
+    {
+      "name": "Breaking alerts",
+      "time": "As needed",
+      "goal": "Notify only for high-impact events, safety-critical updates, major geopolitical developments, elections, severe weather, or market-moving news."
+    }
+  ],
+  "coveragePriorities": [
+    {
+      "section": "United States",
+      "topics": [
+        "White House and federal agencies",
+        "Congress and major legislation",
+        "Supreme Court and federal courts",
+        "Elections and voting",
+        "State-level stories with national impact",
+        "Public safety, severe weather, and emergency alerts"
+      ]
+    },
+    {
+      "section": "World",
+      "topics": [
+        "Wars, diplomacy, and peace efforts",
+        "Major elections and leadership changes",
+        "Humanitarian crises",
+        "Global economy and trade",
+        "International health and science developments",
+        "Regional stories from Europe, Asia-Pacific, the Middle East, Africa, and the Americas"
+      ]
+    },
+    {
+      "section": "Money and markets",
+      "topics": [
+        "Inflation, jobs, and consumer prices",
+        "Federal Reserve and central banks",
+        "Major company or industry news",
+        "Energy, housing, and supply chains"
+      ]
+    },
+    {
+      "section": "Science, technology, and culture",
+      "topics": [
+        "Health research and public health",
+        "Climate and extreme weather",
+        "Artificial intelligence and cybersecurity",
+        "Space, education, media, sports, and culture when broadly relevant"
+      ]
+    }
+  ],
+  "sourceStrategy": {
+    "principles": [
+      "Prefer primary documents and direct statements when available.",
+      "Cross-check high-impact claims with at least two credible sources before treating them as confirmed.",
+      "Use a broad source mix so the briefing does not inherit the blind spots of a single newsroom.",
+      "Label analysis, opinion, projections, and unverified reports clearly."
+    ],
+    "starterSources": [
+      {
+        "type": "wire services",
+        "examples": [
+          "Associated Press",
+          "Reuters"
+        ]
+      },
+      {
+        "type": "public and international broadcasters",
+        "examples": [
+          "BBC",
+          "NPR",
+          "PBS NewsHour",
+          "Deutsche Welle",
+          "France 24",
+          "NHK World"
+        ]
+      },
+      {
+        "type": "official and primary sources",
+        "examples": [
+          "White House statements",
+          "Congressional records",
+          "Supreme Court opinions",
+          "Federal Reserve releases",
+          "CDC and WHO updates",
+          "NOAA and National Weather Service alerts"
+        ]
+      },
+      {
+        "type": "fact-checking and context",
+        "examples": [
+          "FactCheck.org",
+          "PolitiFact",
+          "Snopes",
+          "academic and think tank explainers when relevant"
+        ]
+      }
+    ]
+  },
+  "rankingSignals": [
+    "Confirmed public impact",
+    "Safety or emergency relevance",
+    "Geographic breadth",
+    "Policy, economic, or diplomatic consequences",
+    "What changed since the last briefing",
+    "Reader-stated interests"
+  ],
+  "guardrails": [
+    "Avoid sensational language and clickbait.",
+    "Separate confirmed facts from analysis or speculation.",
+    "Do not over-alert; breaking alerts should be rare and meaningful.",
+    "Include uncertainty when a story is still developing.",
+    "Note material corrections or changed facts in the next briefing.",
+    "Offer source links or citations in production integrations."
+  ],
+  "briefingFormat": [
+    "Top 5 things to know",
+    "U.S. news",
+    "World news",
+    "Economy and markets",
+    "Science, technology, health, and climate",
+    "What changed since the last briefing",
+    "What to watch next",
+    "Questions you can ask the agent"
+  ],
+  "personalizationQuestions": [
+    "Which regions outside the U.S. do you care about most?",
+    "How many alerts per day feels acceptable?",
+    "Do you want local or state news included?",
+    "Which topics should always be included or avoided?",
+    "Do you prefer brief bullet points, deeper explainers, or both?",
+    "Where should briefings be delivered: email, SMS, Slack, browser, or app?"
+  ],
+  "sampleBriefing": {
+    "label": "Example briefing template",
+    "note": "This is a format sample, not live news.",
+    "items": [
+      {
+        "section": "Top story",
+        "headline": "[Verified headline from multiple sources]",
+        "summary": "One sentence explaining what happened, who is affected, and why it matters.",
+        "status": "Confirmed / developing / analysis"
+      },
+      {
+        "section": "U.S.",
+        "headline": "[Major national development]",
+        "summary": "What changed since the previous briefing, with relevant context and next steps.",
+        "status": "Confirmed"
+      },
+      {
+        "section": "World",
+        "headline": "[Major international development]",
+        "summary": "Regional context, humanitarian or diplomatic stakes, and what remains uncertain.",
+        "status": "Developing"
+      }
+    ]
+  },
+  "implementationBacklog": [
+    "Connect RSS feeds and/or licensed news APIs.",
+    "Add a scheduler for morning, midday, evening, and breaking alert runs.",
+    "Store story clusters and previous briefings so the agent can explain what changed.",
+    "Add user preferences for regions, topics, delivery channels, and alert thresholds.",
+    "Add citation rendering and source audit logs.",
+    "Add tests for ranking, deduplication, alert thresholds, and source labeling."
+  ]
+}
