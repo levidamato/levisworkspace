@@ -1,0 +1,336 @@
+{
+  "version": 1,
+  "mode": "sample",
+  "generatedAt": "2026-07-08T02:35:00Z",
+  "sourceCount": 11,
+  "itemCount": 8,
+  "clusters": [
+    {
+      "id": "cluster-white-house-border-policy",
+      "title": "Sample: White House announces new border policy guidance",
+      "category": "Politics",
+      "status": "Developing",
+      "urgencyScore": 91,
+      "latestUpdateAt": "2026-07-08T02:23:00Z",
+      "sourceTypes": [
+        "official",
+        "wire",
+        "major-outlet",
+        "owned"
+      ],
+      "topics": [
+        "White House",
+        "border",
+        "policy",
+        "DOJ"
+      ],
+      "sources": [
+        {
+          "sourceId": "white-house",
+          "name": "White House Briefing Room",
+          "type": "official",
+          "trustLabel": "Official source",
+          "url": "https://www.whitehouse.gov/briefing-room/"
+        },
+        {
+          "sourceId": "fox-politics",
+          "name": "Fox News Politics",
+          "type": "owned",
+          "trustLabel": "Owned newsroom",
+          "url": "https://www.foxnews.com/politics"
+        },
+        {
+          "sourceId": "ap-top",
+          "name": "Associated Press Top News",
+          "type": "wire",
+          "trustLabel": "Wire service",
+          "url": "https://apnews.com/"
+        },
+        {
+          "sourceId": "politico",
+          "name": "Politico Politics",
+          "type": "major-outlet",
+          "trustLabel": "Major outlet",
+          "url": "https://www.politico.com/"
+        }
+      ],
+      "items": [
+        {
+          "id": "sample-white-house-1",
+          "sourceId": "white-house",
+          "sourceName": "White House Briefing Room",
+          "title": "Sample official statement on border policy guidance",
+          "url": "https://www.whitehouse.gov/briefing-room/",
+          "publishedAt": "2026-07-08T02:23:00Z",
+          "summary": "Sample item representing an official statement that should be checked before packaging a story."
+        },
+        {
+          "id": "sample-fox-politics-1",
+          "sourceId": "fox-politics",
+          "sourceName": "Fox News Politics",
+          "title": "Sample Fox politics update on administration guidance",
+          "url": "https://www.foxnews.com/politics",
+          "publishedAt": "2026-07-08T02:19:00Z",
+          "summary": "Sample item representing owned newsroom coverage that can be compared against outside reporting."
+        },
+        {
+          "id": "sample-ap-1",
+          "sourceId": "ap-top",
+          "sourceName": "Associated Press Top News",
+          "title": "Sample wire report tracks reaction to border guidance",
+          "url": "https://apnews.com/",
+          "publishedAt": "2026-07-08T02:14:00Z",
+          "summary": "Sample wire item showing another source on the same developing story."
+        }
+      ],
+      "alertHits": [
+        "Official source posted",
+        "Multiple source types",
+        "Tracked keyword: White House",
+        "Tracked keyword: border"
+      ],
+      "verificationLinks": [
+        {
+          "label": "White House briefing room",
+          "url": "https://www.whitehouse.gov/briefing-room/"
+        },
+        {
+          "label": "Justice Department news",
+          "url": "https://www.justice.gov/news"
+        }
+      ],
+      "productionBrief": {
+        "whatHappened": "Sample cluster showing how an official policy statement, owned newsroom coverage and outside reports would be grouped.",
+        "latestUpdate": "Latest sample update came from an official source.",
+        "whatToCheck": [
+          "Confirm the original White House language.",
+          "Check whether DOJ or DHS has issued related guidance.",
+          "Compare Fox story fields with wire details before adding a homepage note."
+        ],
+        "suggestedSeoKeywords": [
+          "White House",
+          "border policy",
+          "DOJ",
+          "administration guidance"
+        ],
+        "handoffNote": "Sample: Official source is newest. Verify agency response and update related links before publishing."
+      }
+    },
+    {
+      "id": "cluster-severe-weather-alerts",
+      "title": "Sample: Severe weather alerts expand across central states",
+      "category": "Weather",
+      "status": "Watch",
+      "urgencyScore": 84,
+      "latestUpdateAt": "2026-07-08T02:11:00Z",
+      "sourceTypes": [
+        "official",
+        "owned"
+      ],
+      "topics": [
+        "weather",
+        "storm",
+        "tornado",
+        "emergency"
+      ],
+      "sources": [
+        {
+          "sourceId": "nws-alerts",
+          "name": "National Weather Service Alerts",
+          "type": "official",
+          "trustLabel": "Official source",
+          "url": "https://www.weather.gov/alerts"
+        },
+        {
+          "sourceId": "fema",
+          "name": "FEMA News Releases",
+          "type": "official",
+          "trustLabel": "Official source",
+          "url": "https://www.fema.gov/press-releases"
+        },
+        {
+          "sourceId": "fox-latest",
+          "name": "Fox News Latest",
+          "type": "owned",
+          "trustLabel": "Owned newsroom",
+          "url": "https://www.foxnews.com/"
+        }
+      ],
+      "items": [
+        {
+          "id": "sample-nws-1",
+          "sourceId": "nws-alerts",
+          "sourceName": "National Weather Service Alerts",
+          "title": "Sample National Weather Service alert for central states",
+          "url": "https://www.weather.gov/alerts",
+          "publishedAt": "2026-07-08T02:11:00Z",
+          "summary": "Sample official weather alert used to demonstrate high-urgency official-source handling."
+        },
+        {
+          "id": "sample-fema-1",
+          "sourceId": "fema",
+          "sourceName": "FEMA News Releases",
+          "title": "Sample FEMA readiness update",
+          "url": "https://www.fema.gov/press-releases",
+          "publishedAt": "2026-07-08T01:58:00Z",
+          "summary": "Sample emergency-management context for producers."
+        }
+      ],
+      "alertHits": [
+        "Official source posted",
+        "Tracked keyword: tornado",
+        "Tracked keyword: emergency"
+      ],
+      "verificationLinks": [
+        {
+          "label": "National Weather Service alerts",
+          "url": "https://www.weather.gov/alerts"
+        },
+        {
+          "label": "FEMA press releases",
+          "url": "https://www.fema.gov/press-releases"
+        }
+      ],
+      "productionBrief": {
+        "whatHappened": "Sample cluster showing an official weather alert grouped with emergency-management context.",
+        "latestUpdate": "Latest sample update came from the National Weather Service.",
+        "whatToCheck": [
+          "Confirm counties and expiration times directly with NWS.",
+          "Check local emergency-management updates before writing impact language.",
+          "Add safety guidance only from official sources."
+        ],
+        "suggestedSeoKeywords": [
+          "severe weather",
+          "tornado warning",
+          "National Weather Service",
+          "FEMA"
+        ],
+        "handoffNote": "Sample: NWS is the source of truth. Watch for updated warning areas and FEMA declarations."
+      }
+    },
+    {
+      "id": "cluster-justice-crime-update",
+      "title": "Sample: Justice Department and FBI publish crime enforcement updates",
+      "category": "Crime",
+      "status": "Monitor",
+      "urgencyScore": 73,
+      "latestUpdateAt": "2026-07-08T01:44:00Z",
+      "sourceTypes": [
+        "official",
+        "major-outlet"
+      ],
+      "topics": [
+        "DOJ",
+        "FBI",
+        "crime",
+        "court"
+      ],
+      "sources": [
+        {
+          "sourceId": "justice",
+          "name": "Justice Department News",
+          "type": "official",
+          "trustLabel": "Official source",
+          "url": "https://www.justice.gov/news"
+        },
+        {
+          "sourceId": "fbi",
+          "name": "FBI Press Releases",
+          "type": "official",
+          "trustLabel": "Official source",
+          "url": "https://www.fbi.gov/news/press-releases"
+        },
+        {
+          "sourceId": "the-hill",
+          "name": "The Hill",
+          "type": "major-outlet",
+          "trustLabel": "Major outlet",
+          "url": "https://thehill.com/"
+        }
+      ],
+      "items": [
+        {
+          "id": "sample-doj-1",
+          "sourceId": "justice",
+          "sourceName": "Justice Department News",
+          "title": "Sample DOJ enforcement release",
+          "url": "https://www.justice.gov/news",
+          "publishedAt": "2026-07-08T01:44:00Z",
+          "summary": "Sample official DOJ release demonstrating source-of-truth placement."
+        },
+        {
+          "id": "sample-fbi-1",
+          "sourceId": "fbi",
+          "sourceName": "FBI Press Releases",
+          "title": "Sample FBI field office update",
+          "url": "https://www.fbi.gov/news/press-releases",
+          "publishedAt": "2026-07-08T01:37:00Z",
+          "summary": "Sample FBI update that would be checked before adding names, charges or locations."
+        },
+        {
+          "id": "sample-hill-1",
+          "sourceId": "the-hill",
+          "sourceName": "The Hill",
+          "title": "Sample outlet report follows federal enforcement update",
+          "url": "https://thehill.com/",
+          "publishedAt": "2026-07-08T01:25:00Z",
+          "summary": "Sample outside report for comparison."
+        }
+      ],
+      "alertHits": [
+        "Official source posted",
+        "Tracked keyword: DOJ",
+        "Tracked keyword: FBI"
+      ],
+      "verificationLinks": [
+        {
+          "label": "Justice Department news",
+          "url": "https://www.justice.gov/news"
+        },
+        {
+          "label": "FBI press releases",
+          "url": "https://www.fbi.gov/news/press-releases"
+        }
+      ],
+      "productionBrief": {
+        "whatHappened": "Sample cluster showing federal law-enforcement updates grouped with follow-on coverage.",
+        "latestUpdate": "Latest sample update came from DOJ.",
+        "whatToCheck": [
+          "Verify charges, titles, spellings and court district.",
+          "Avoid unsupported motive language.",
+          "Check whether Fox has an existing related story to link."
+        ],
+        "suggestedSeoKeywords": [
+          "Justice Department",
+          "FBI",
+          "federal charges",
+          "crime"
+        ],
+        "handoffNote": "Sample: DOJ is newest. Confirm legal language and add official links to the story file."
+      }
+    }
+  ],
+  "alerts": [
+    {
+      "id": "alert-white-house-border",
+      "clusterId": "cluster-white-house-border-policy",
+      "level": "high",
+      "message": "Sample high-priority politics cluster has official, owned, wire and outside-source coverage.",
+      "triggeredAt": "2026-07-08T02:23:00Z"
+    },
+    {
+      "id": "alert-weather",
+      "clusterId": "cluster-severe-weather-alerts",
+      "level": "high",
+      "message": "Sample severe-weather cluster includes official warning language and emergency-management context.",
+      "triggeredAt": "2026-07-08T02:11:00Z"
+    },
+    {
+      "id": "alert-justice-fbi",
+      "clusterId": "cluster-justice-crime-update",
+      "level": "medium",
+      "message": "Sample law-enforcement cluster includes both DOJ and FBI source material.",
+      "triggeredAt": "2026-07-08T01:44:00Z"
+    }
+  ]
+}

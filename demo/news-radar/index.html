@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News Radar MVP</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Digital production assistant tool</p>
+        <h1>News Radar</h1>
+        <p class="dek">
+          A personal newsroom command center for tracking developing stories,
+          official-source updates, source overlap and production handoff notes.
+        </p>
+      </div>
+      <div class="hero-card" aria-label="Dashboard summary">
+        <span class="label">Radar status</span>
+        <strong id="radar-status">Loading...</strong>
+        <span id="radar-generated">Fetching source data</span>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Filters</h2>
+            <button class="text-button" type="button" data-reset>Reset</button>
+          </div>
+          <label class="field">
+            Search
+            <input id="search-input" type="search" placeholder="Try DOJ, weather, border">
+          </label>
+          <label class="field">
+            Category
+            <select id="category-filter">
+              <option value="all">All categories</option>
+            </select>
+          </label>
+          <label class="check-row">
+            <input id="official-only" type="checkbox">
+            Official-source clusters only
+          </label>
+          <label class="check-row">
+            <input id="high-priority" type="checkbox">
+            High priority only
+          </label>
+        </section>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Active alerts</h2>
+            <span id="alert-count" class="count-pill">0</span>
+          </div>
+          <div id="alerts-list" class="stack"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Source mix</h2>
+          </div>
+          <div id="source-mix" class="source-mix"></div>
+        </section>
+      </aside>
+
+      <section class="content">
+        <div class="toolbar">
+          <div>
+            <p class="eyebrow">Developing clusters</p>
+            <h2 id="cluster-count">Loading clusters</h2>
+          </div>
+          <label class="field compact">
+            Sort by
+            <select id="sort-filter">
+              <option value="urgency">Urgency</option>
+              <option value="latest">Latest update</option>
+              <option value="sources">Source count</option>
+            </select>
+          </label>
+        </div>
+        <div id="clusters" class="clusters" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <template id="cluster-template">
+      <article class="cluster-card">
+        <div class="cluster-topline">
+          <span class="status-pill"></span>
+          <span class="score-pill"></span>
+        </div>
+        <h3></h3>
+        <p class="cluster-meta"></p>
+        <div class="topic-row"></div>
+        <section class="brief"></section>
+        <details>
+          <summary>Source coverage and latest items</summary>
+          <div class="details-grid">
+            <div>
+              <h4>Sources</h4>
+              <ul class="source-list"></ul>
+            </div>
+            <div>
+              <h4>Latest items</h4>
+              <ul class="item-list"></ul>
+            </div>
+          </div>
+        </details>
+        <div class="actions">
+          <button class="primary-button" type="button" data-copy-brief>Copy handoff note</button>
+          <button class="secondary-button" type="button" data-copy-links>Copy verification links</button>
+        </div>
+      </article>
+    </template>
+
+    <script src="./radar.js"></script>
+  </body>
+</html>

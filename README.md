@@ -33,6 +33,42 @@ http://localhost:8000/demo/
 The demo loads `data/quizzes/presidents.json` and renders a 10-question,
 multiple-choice quiz with scoring and answer explanations.
 
+## Run the News Radar MVP locally
+
+This repository also includes a static **News Radar** MVP for a digital
+production assistant workflow. It aggregates configured RSS/Atom sources into
+story clusters with urgency scores, active alerts, source links and copyable
+production handoff notes.
+
+From the repository root:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open:
+
+```text
+http://localhost:8000/demo/news-radar/
+```
+
+The dashboard reads:
+
+- `data/news-radar/sources.json` - editable source catalog and tracked keywords.
+- `data/news-radar/radar.json` - generated dashboard data. The checked-in file
+  contains sample clusters so the UI works offline.
+
+To refresh the dashboard with live feed data:
+
+```bash
+python3 tools/news_radar.py
+```
+
+The refresh script uses only the Python standard library. It fetches enabled
+feeds from `sources.json`, parses RSS/Atom items, clusters related titles,
+scores urgency, builds verification links and rewrites
+`data/news-radar/radar.json`.
+
 ## Website/CMS integration path
 
 The quiz content is intentionally stored as JSON so it can be:
